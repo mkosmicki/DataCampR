@@ -1,0 +1,32 @@
+#Functions
+# Basic Function template
+myfunction <- function (arg1, arg2) {
+Body
+}
+
+# Define ratio() function
+ratio <- function(x, y) {
+  x/y
+}
+
+# Call ratio() with arguments 3 and 4
+ratio(x=3, y=4)
+# OR
+ratio(3,4)
+
+# Rewrite the call to follow best practices
+mean(0.1, x = c(1:9, NA),TRUE)
+# Solution
+mean(c(1:9, NA), trim = 0.1, na.rm = TRUE)
+
+#Scoping describes how R looks up values by name
+#When you call a function, a new environment is made for the function to do its work
+#The new environment is populated with the argument values
+#Objects are looked for first in this environment
+#Describes where, not when, to look for a value
+#Each call to a function has its own clean environment
+
+#Every vector has two key properties
+#Type typeof()
+#Length length()
+
